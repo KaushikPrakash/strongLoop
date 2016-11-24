@@ -1,5 +1,5 @@
 {
-  "name": "Attendee",
+  "name": "attendee",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -8,10 +8,13 @@
   "properties": {
     "FirstName": {
       "type": "string",
-      "required": true
+      "required": true,
+      "default": ""
     },
     "LastName": {
-      "type": "string"
+      "type": "string",
+      "required": false,
+      "default": ""
     }
   },
   "validations": [],

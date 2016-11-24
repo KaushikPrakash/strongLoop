@@ -32,8 +32,8 @@
     "dataSource": "db",
     "public": false
   },
-  "Attendee": {
-    "dataSource": "db",
+  "attendee": {
+    "dataSource": "attendee",
     "public": true
   }
 }

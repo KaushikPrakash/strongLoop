@@ -2,5 +2,15 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "attendee": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "sample",
+    "password": "poppoppop321#",
+    "name": "attendee",
+    "user": "kaushik",
+    "connector": "mysql"
   }
 }
