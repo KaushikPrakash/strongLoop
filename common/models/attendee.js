@@ -2,9 +2,18 @@
 
 module.exports = function(Attendee) {
 	Attendee.findByName = function(username,cbk){
-		Attendee.findOne({FirstName:username},function(err,res){
-			cbk(res)
-		})
+		Attendee.find({
+		    where: {FirstName: {lt: username}},
+		  
+		}, function(err, res) {
+			if(res){
+				cbk(res)
+			}
+			else{
+				cbk(err)
+		   }
+
+		});
 	}
 	
 	Attendee.findByName();
